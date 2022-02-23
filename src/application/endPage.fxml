@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EndController">
+   <children>
+      <ImageView fx:id="closeBtn" fitHeight="50.0" fitWidth="50.0" layoutX="1020.0" layoutY="10.0" onMouseClicked="#closeButton" onMousePressed="#changeBtnImg" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="icon" fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#closeButton" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="400.0" layoutY="563.0" prefHeight="91.0" prefWidth="281.0" text="Bien joué !">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <ListView fx:id="liste" fixedCellSize="100.0" layoutX="284.0" layoutY="158.0" prefHeight="405.0" prefWidth="513.0" />
+      <Label layoutX="347.0" layoutY="81.0" text="Tableau des scores :">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="crownView1" fitHeight="100.0" fitWidth="100.0" layoutX="142.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/gold_crown.png" />
+         </image></ImageView>
+      <ImageView fx:id="crownView2" fitHeight="75.0" fitWidth="75.0" layoutX="156.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/silver_crown.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="crownView3" fitHeight="50.0" fitWidth="50.0" layoutX="169.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/bronze_crown.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

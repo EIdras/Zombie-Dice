@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController">
+   <children>
+      <Label layoutX="454.0" layoutY="18.0" prefHeight="42.0" prefWidth="174.0" text="C'est au tour de :" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Text fx:id="playerName_txt" layoutX="401.0" layoutY="105.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="NomJoueur" textAlignment="CENTER" wrappingWidth="280.0">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Text>
+      <Label fx:id="lastTurn_lbl" alignment="BASELINE_CENTER" contentDisplay="TOP" layoutX="445.0" layoutY="92.0" text="Dernier tour !" textAlignment="CENTER" textFill="#b20000" visible="false">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Button layoutX="441.0" layoutY="187.0" mnemonicParsing="false" onAction="#rollDice" prefHeight="60.0" prefWidth="200.0" text="Lancer dé">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Canvas fx:id="canvas" height="160.0" layoutX="160.0" layoutY="546.0" width="760.0" />
+      <ImageView fx:id="de1View" fitHeight="120.0" fitWidth="120.0" layoutX="180.0" layoutY="566.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="de2View" fitHeight="120.0" fitWidth="120.0" layoutX="480.0" layoutY="567.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="de3View" fitHeight="120.0" fitWidth="120.0" layoutX="780.0" layoutY="566.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="nbRedDices_lbl" layoutX="331.0" layoutY="426.0" text="0" textFill="RED">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Label fx:id="nbYellowDices_lbl" layoutX="203.0" layoutY="426.0" text="0" textFill="#ffe300">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Label fx:id="nbGreenDices_lbl" layoutX="74.0" layoutY="426.0" text="0" textFill="#00ff55">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="gobeletView" fitHeight="300.0" fitWidth="300.0" layoutX="64.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="closeBtn" fitHeight="50.0" fitWidth="50.0" layoutX="1020.0" layoutY="10.0" onMouseClicked="#closeButton" onMousePressed="#changeBtnImg" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="icon" fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#closeButton" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="gunNb_txt" layoutX="589.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="gunView" fitHeight="75.0" fitWidth="75.0" layoutX="560.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="brainNb_txt" layoutX="473.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="brainView" fitHeight="75.0" fitWidth="75.0" layoutX="444.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="441.0" layoutY="267.0" mnemonicParsing="false" onAction="#passTurn" prefHeight="60.0" prefWidth="200.0" text="Passer tour">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <ListView fx:id="scoreView" fixedCellSize="60.0" layoutX="722.0" layoutY="150.0" prefHeight="300.0" prefWidth="280.0" />
+      <Label layoutX="722.0" layoutY="105.0" text="Scores :">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="671.0" layoutY="14.0" prefHeight="25.0" prefWidth="102.0" text="Joueur suivant :" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text fx:id="nextPlayerName_txt" layoutX="628.0" layoutY="59.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="NomJoueurSuiv" textAlignment="CENTER" wrappingWidth="188.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

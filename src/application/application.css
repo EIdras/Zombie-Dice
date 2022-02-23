@@ -1,0 +1,48 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#pane {
+	-fx-background-image: url("/application/img/wallpaperMenu.png");
+}
+.texte .text{
+	-fx-fill: #ffffff;
+	
+}
+.texte2 .text{
+	-fx-fill: #000000;
+}
+
+#jouer {
+	-fx-background-radius: 5em;
+}
+
+.root{
+    -fx-base: rgb(132, 145, 47);
+}
+
+.list-cell {
+	-fx-font-size : 36px;
+}
+
+.dialog-pane {
+    -fx-background-color: black;
+}
+
+.dialog-pane .label {
+    -fx-text-fill: white;
+}
+
+.dialog-pane:header .header-panel {
+    -fx-background-color: black;
+}
+
+.dialog-pane:header .header-panel .label {
+    -fx-font-style: italic;
+    -fx-font-size: 2em;
+}
+
+.slider .axis{
+	-fx-tick-label-fill: #99ff99;
+	-fx-tick-label-font-size: 16 px;
+}
+.button{
+	-fx-cursor : hand;
+}
